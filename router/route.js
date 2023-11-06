@@ -10,9 +10,17 @@ router.route('/questions')
         .post(controller.insertQuestions) // POST Request
         .delete(controller.dropQuestions) // DELETE Request
 
+// Reusult Routes API
 router.route('/result')
         .get(controller.getResult)
         .post(controller.storeResult)
         .delete(controller.dropResult)
 
+// Register Routes API
+router.route('/signup')
+        .post(controller.signUp)
+
+router.route('/signin')
+        .post(controller.signIn)
+        
 export default router;

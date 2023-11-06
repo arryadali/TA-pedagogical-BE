@@ -1,6 +1,8 @@
 import Questions from "../models/questionSchema.js"
 import Results from "../models/resultSchema.js"
 import questions, {answers} from '../database/data.js'
+import userModel from "../models/userModel.js"
+
 
 // get all questions
 export async function getQuestions(req, res) {
@@ -68,4 +70,54 @@ export async function dropResult(req, res) {
     } catch (error) {
         res.json({error})
     }
+}
+
+// Register
+export async function signUp(req, res) {
+    console.log(req.body)
+
+    const newUser = new userModel({
+        nama: req.body.nama,
+        kelas: req.body.kelas,
+        username : req.body.username,
+        password : req.body.password
+    })
+
+    newUser.save()
+    .then(() => {
+        res.send({ code: 200, message: 'Signup Success...!' })
+    }).catch((err) => {
+        res.send({ code: 500, message: 'Signup Err...!' })
+    })
+}
+
+export async function signIn(req, res) {
+    console.log(req.body.username)
+
+    // username and password match
+
+    userModel.findOne({username : req.body.username})
+    .then(result => {
+        console.log(result, "11")
+
+        // match password
+        if(result.password !== req.body.password) {
+            res.send({
+                code : 404,
+                message : "Password wrong...!"
+            }) 
+        } else {
+            res.send({
+                nama : result.nama,
+                code : 200,
+                message : "User found...!",
+                token : "awdwd"
+            })
+        }
+    }).catch(err => {
+        res.send({
+            code : 500,
+            message : "User not found...!"
+        })
+    })
 }
