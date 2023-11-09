@@ -18,8 +18,10 @@ router.route('/result')
 
 // Register Routes API
 router.route('/signup')
+        .get(controller.getSignUp)
         .post(controller.signUp)
 
+// Register Routes API
 router.route('/signin')
         .post(controller.signIn)
         

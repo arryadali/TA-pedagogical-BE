@@ -79,6 +79,7 @@ export async function signUp(req, res) {
     const newUser = new userModel({
         nama: req.body.nama,
         kelas: req.body.kelas,
+        absen: req.body.absen,
         username : req.body.username,
         password : req.body.password
     })
@@ -90,6 +91,24 @@ export async function signUp(req, res) {
         res.send({ code: 500, message: 'Signup Err...!' })
     })
 }
+
+export async function getSignUp(req, res) {
+    try {
+        const users = await userModel.find()
+
+        if(!users) {
+            return res.status(404).json({msg : "Data not found...!"})
+        }
+
+        res.status(200).json(users)
+    } catch (error) {
+        res.send({
+            code : 500,
+            msg : "a server error occurred"
+        })
+    }
+}
+
 
 export async function signIn(req, res) {
     console.log(req.body.username)
