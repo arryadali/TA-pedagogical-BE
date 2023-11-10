@@ -1,8 +1,10 @@
+import questions, {answers} from '../database/data.js'
+import materi from '../database/materi.js'
+
 import Questions from "../models/questionSchema.js"
 import Results from "../models/resultSchema.js"
-import questions, {answers} from '../database/data.js'
-import userModel from "../models/userModel.js"
-
+import userModel from "../models/userSchema.js"
+import Materi from "../models/materiSchema.js"
 
 // get all questions
 export async function getQuestions(req, res) {
@@ -92,6 +94,7 @@ export async function signUp(req, res) {
     })
 }
 
+// get all Signup
 export async function getSignUp(req, res) {
     try {
         const users = await userModel.find()
@@ -109,7 +112,7 @@ export async function getSignUp(req, res) {
     }
 }
 
-
+//
 export async function signIn(req, res) {
     console.log(req.body.username)
 
@@ -139,4 +142,36 @@ export async function signIn(req, res) {
             message : "User not found...!"
         })
     })
+}
+
+// get all materi
+export async function getMateri(req, res) {
+    try {
+        const m = await Materi.find()
+        res.json(m)
+    } catch (error) {
+        res.json({error})
+    }
+}
+
+// insert all materi
+export async function insertMateri(req, res) {
+    try {
+        await Materi.insertMany([
+          {materi}
+        ]);
+        res.json({ msg: "Data Saved Successfully...!" });
+      } catch (error) {
+        res.status(500).json({ error: error.message });
+      }
+}
+
+// delete all Materi
+export async function dropMateri(req, res) {
+    try {
+        await Materi.deleteMany();
+        res.json({ msg: "Materi Deleted Successfully...!" })
+    } catch (error) {
+        res.json({error})
+    }
 }

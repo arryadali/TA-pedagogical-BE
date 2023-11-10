@@ -21,8 +21,14 @@ router.route('/signup')
         .get(controller.getSignUp)
         .post(controller.signUp)
 
-// Register Routes API
+// Login Routes API
 router.route('/signin')
         .post(controller.signIn)
+
+// Materi Routes API   
+router.route('/materi')
+        .get(controller.getMateri)
+        .post(controller.insertMateri)
+        .delete(controller.dropMateri)
         
 export default router;
