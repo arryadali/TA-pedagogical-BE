@@ -3,6 +3,7 @@ import questions, {answers} from '../database/data.js'
 import Questions from "../models/questionSchema.js"
 import Results from "../models/resultSchema.js"
 import userModel from "../models/userSchema.js"
+import likert from "../models/likertSchema.js"
 
 // get all questions
 export async function getQuestions(req, res) {
@@ -74,11 +75,10 @@ export async function dropResult(req, res) {
 
 // Register
 export async function signUp(req, res) {
-    console.log(req.body)
-
     const newUser = new userModel({
         nama: req.body.nama,
         kelas: req.body.kelas,
+        jeniskelas: req.body.jeniskelas,
         absen: req.body.absen,
         username : req.body.username,
         password : req.body.password
@@ -112,15 +112,9 @@ export async function getSignUp(req, res) {
 
 //
 export async function signIn(req, res) {
-    console.log(req.body.username)
-
-    // username and password match
 
     userModel.findOne({username : req.body.username})
     .then(result => {
-        console.log(result, "11")
-
-        // match password
         if(result.password !== req.body.password) {
             res.send({
                 code : 404,
@@ -129,6 +123,7 @@ export async function signIn(req, res) {
         } else {
             res.send({
                 nama : result.nama,
+                jeniskelas : result.jeniskelas,
                 code : 200,
                 message : "User found...!",
                 token : "awdwd"
@@ -140,4 +135,56 @@ export async function signIn(req, res) {
             message : "User not found...!"
         })
     })
+}
+
+// get all likert scale
+export async function getLikert(req, res) {
+    try {
+        const q = await likert.find()
+        res.json(q)
+    } catch (error) {
+        res.json({error})
+    }
+}
+
+// post all likert scale
+export async function insertLikert(req, res) {
+    try {
+        const likertResponses = req.body;
+
+        await Promise.all(
+          likertResponses.map(async (response) => {
+            const { userId, questionId, value, text } = response;
+            const likertData = new Likert({
+              userId,
+              questionId,
+              value,
+              text,
+            });
+            await likertData.save();
+          })
+        );
+    
+        res.json({ msg: 'Data Likert disimpan..!' });
+      } catch (error) {
+        res.json({ error: error.message });
+      }
+
+    // try {
+    //     const { userId, questionId, value, text } = req.body;
+    //     console.log('Received Likert Data:', req.body);
+
+    //     const likertData = new likert({
+    //         userId,
+    //         questionId,
+    //         value,
+    //         text
+    //     });
+
+    //     await likertData.save();
+
+    //     res.json({ msg : 'Data Likert disimpan..!' });
+    // } catch (error) {
+    //     res.json({ error: error.message });
+    // }
 }
