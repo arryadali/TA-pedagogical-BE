@@ -1,14 +1,18 @@
 import questions, {answers} from '../database/data.js'
+import questionsPretest, {answersPretest} from '../database/dataPretest.js'
 
-import Questions from "../models/questionSchema.js"
+import Questionsposttest from "../models/questionSchema.js"
+import Questionspretest from "../models/questionPretestSchema.js"
+
 import Results from "../models/resultSchema.js"
+import ResultsPretest from "../models/resultPretestSchema.js"
+
 import userModel from "../models/userSchema.js"
-import likert from "../models/likertSchema.js"
 
 // get all questions
-export async function getQuestions(req, res) {
+export async function getQuestionsPosttest(req, res) {
     try {
-        const q = await Questions.find()
+        const q = await Questionsposttest.find()
         res.json(q)
     } catch (error) {
         res.json({error})
@@ -16,9 +20,9 @@ export async function getQuestions(req, res) {
 }
 
 // insert all questions
-export async function insertQuestions(req, res) {
+export async function insertQuestionsPosttest(req, res) {
     try {
-        await Questions.insertMany([
+        await Questionsposttest.insertMany([
           { questions, answers },
         ]);
         res.json({ msg: "Data Saved Successfully...!" });
@@ -28,9 +32,41 @@ export async function insertQuestions(req, res) {
 }
 
 // delete all questions
-export async function dropQuestions(req, res) {
+export async function dropQuestionsPosttest(req, res) {
     try {
-        await Questions.deleteMany();
+        await Questionsposttest.deleteMany();
+        res.json({ msg: "Questions Deleted Successfully...!" })
+    } catch (error) {
+        res.json({error})
+    }
+}
+
+// get all questions
+export async function getQuestionsPretest(req, res) {
+    try {
+        const q = await Questionspretest.find()
+        res.json(q)
+    } catch (error) {
+        res.json({error})
+    }
+}
+
+// insert all questions
+export async function insertQuestionsPretest(req, res) {
+    try {
+        await Questionspretest.insertMany([
+          { questionsPretest, answersPretest },
+        ]);
+        res.json({ msg: "Data Saved Successfully...!" });
+      } catch (error) {
+        res.status(500).json({ error: error.message });
+      }
+}
+
+// delete all questions
+export async function dropQuestionsPretest(req, res) {
+    try {
+        await Questionspretest.deleteMany();
         res.json({ msg: "Questions Deleted Successfully...!" })
     } catch (error) {
         res.json({error})
@@ -67,6 +103,42 @@ export async function storeResult(req, res) {
 export async function dropResult(req, res) {
     try {
         await Results.deleteMany();
+        res.json({ msg: "Result Deleted Successfully...!" })
+    } catch (error) {
+        res.json({error})
+    }
+}
+
+// get all result
+export async function getResultPretest(req, res) {
+    try {
+        const r = await ResultsPretest.find();
+        res.json(r)
+    } catch (error) {
+        res.json({error})
+    }
+}
+
+// post all result
+export async function storeResultPretest(req, res) {
+    try {
+        const { usernamePretest, resultPretest, attemptsPretest, pointsPretest, achievedPretest } = req.body;
+
+        if (!usernameusernamePretest && !resultPretest) throw new Error("Data Not Provided...!");
+
+        const resultDocument = new ResultsPretest({ usernamePretest, resultPretest, attemptsPretest, pointsPretest, achievedPretest });
+        await resultDocument.save();
+
+        res.json({ msg: "Result Saved Successfully...!" });
+    } catch (error) {
+        res.json({ error: error.message });
+    }
+}
+
+// delete all result
+export async function dropResultPretest(req, res) {
+    try {
+        await ResultsPretest.deleteMany();
         res.json({ msg: "Result Deleted Successfully...!" })
     } catch (error) {
         res.json({error})
@@ -135,56 +207,4 @@ export async function signIn(req, res) {
             message : "User not found...!"
         })
     })
-}
-
-// get all likert scale
-export async function getLikert(req, res) {
-    try {
-        const q = await likert.find()
-        res.json(q)
-    } catch (error) {
-        res.json({error})
-    }
-}
-
-// post all likert scale
-export async function insertLikert(req, res) {
-    try {
-        const likertResponses = req.body;
-
-        await Promise.all(
-          likertResponses.map(async (response) => {
-            const { userId, questionId, value, text } = response;
-            const likertData = new Likert({
-              userId,
-              questionId,
-              value,
-              text,
-            });
-            await likertData.save();
-          })
-        );
-    
-        res.json({ msg: 'Data Likert disimpan..!' });
-      } catch (error) {
-        res.json({ error: error.message });
-      }
-
-    // try {
-    //     const { userId, questionId, value, text } = req.body;
-    //     console.log('Received Likert Data:', req.body);
-
-    //     const likertData = new likert({
-    //         userId,
-    //         questionId,
-    //         value,
-    //         text
-    //     });
-
-    //     await likertData.save();
-
-    //     res.json({ msg : 'Data Likert disimpan..!' });
-    // } catch (error) {
-    //     res.json({ error: error.message });
-    // }
 }
