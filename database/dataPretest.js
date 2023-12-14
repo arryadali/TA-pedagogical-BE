@@ -2,16 +2,16 @@
 export default [
     {
         id : 1,
-        question : "Ini adalah Pretest",
+        questionPretest : "Ini adalah Pretest",
         options : [
-            'Arrya',
+            'ini Pretest',
             'Arya',
             'Aryya',
         ]
     },
     {
         id : 2,
-        question : "Ini adalah Pretest 2",
+        questionPretest : "Ini adalah Pretest 2",
         options : [
             'Arrya',
             'Arya',
@@ -20,7 +20,7 @@ export default [
     },
     {
         id : 3,
-        question : "Ini adalah Pretest 3",
+        questionPretest : "Ini adalah Pretest 3",
         options : [
             'Arrya',
             'Arya',
