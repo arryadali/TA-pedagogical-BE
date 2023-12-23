@@ -2,214 +2,207 @@
 export default [
     {
         id : 1,
-        question : "Berapa jumlah dari 2 x 2/3",
+        question : "Hasil perkalian dari 3 x 2/4 adalah ... ",
         options : [
-            '4/3', // 0
+            '6/4', // 0
             '2/3', // 1
-            '2/8', // 2
-            '8/3', // 3
-        ]
+            '4/4', // 2
+            '7/4', // 3
+        ],
+        category: 'perkalianMudah'
     },
     {
         id : 2,
-        question : "ekspresi mana yang setara dengan 6 x 2/3",
+        question : "bilangan dibawah ini yang setara dengan 2/3 adalah ....",
         options : [
-            '12 x 1/2', // 0
-            '12 x 1/3', // 1
-            '6 x 1/3', // 2
-            '3 x 2/3', // 3
-        ]
+            '1/2', // 0
+            '4/6', // 1
+            '8/3', // 2
+            '3/4', // 3
+        ],
+        category: 'perkalianMudah'
     },
     {
         id : 3,
-        question : "Dari pilihan berikut ini, mana yang merupakan hasil dari operasi 3 x 4/6",
+        question : "Dari pilihan berikut ini, pecahan yang merupakan hasil dari perkalian 4 x 2/3 adalah …",
         options : [
             '4/6', // 0
-            '3/4', // 1
-            '2/1', // 2
-            '2/2', // 3
-        ]
+            '6/3', // 1
+            '8/3', // 2
+            '2/3', // 3
+        ],
+        category: 'perkalianMudah'
     },
     {
         id : 4,
-        question : "Jika 3/4 dari sebuah kue dikalikan dengan 4/2, berapakah hasilnya?",
+        question : "Jika 2/4 bagian dari sebuah kue dikalikan dengan 5/3, maka hasilnya adalah ...",
         options : [
             '3/2', // 0
             '12/4', // 1
-            '2/3', // 2
-            '3/8', // 3
+            '8/4', // 2
+            '10/12', // 3
         ]
     },
     {
         id : 5,
-        question : "Hitunglah penjumlahan dari 1/2 x 4/9",
+        question : "Hasil perkalian dari 3/2 x 2/9 adalah …",
         options : [
             '3/2', // 0
-            '4/9', // 1
-            '4/19', // 2
-            '2/9', // 3
+            '4/18', // 1
+            '5/11', // 2
+            '6/18', // 3
         ]
     },
     {
         id : 6,
-        question : "Ali dan Budi memiliki sejumlah permen. Ali memberikan 2/3 dari permen yang dimilikinya kepada Budi. Selanjutnya, Budi mengalikan permen yang diterimanya dengan 5/6 untuk dibagi dengan teman-temannya. Berapa banyak permen yang diterima oleh teman-teman Budi setelah pembagian?",
+        question : "Ali dan Budi memiliki sejumlah permen. Ali memberikan 4/5 permen yang dimilikinya kepada Budi. Selanjutnya, Budi mengalikan permen yang diterimanya dengan 3/6. Berapa banyaknya permen yang dimiliki Budi …",
         options : [
-            '96/15', // 0
-            '8/20', // 1
-            '5/32', // 2
-            '40/36', // 3
+            '7/6', // 0
+            '12/6', // 1
+            '2/5', // 2
+            '7/11', // 3
         ]
     },
     {
         id : 7,
-        question : "Ali dan Budi memiliki sejumlah permen. Ali memberikan 2/3 dari permen yang dimilikinya kepada Budi. Selanjutnya, Budi mengalikan permen yang diterimanya dengan 5/6 untuk dibagi dengan teman-temannya. Berapa banyak permen yang diterima oleh teman-teman Budi setelah pembagian?",
+        question : "Ali bersama orang tuanya bepergian dari Kota Palu ke Luwuk melalui jalan darat menempuh jarak 12 km. Setelah menempuh 4/6 perjalanan, mereka beristirahat. Perjalanan yang sudah ditempuh Ali bersama orang tuanya sejauh …",
         options : [
-            '96/15', // 0
-            '8/20', // 1
-            '5/32', // 2
-            '40/36', // 3
+            '11 KM', // 0
+            '10 KM', // 1
+            '9 KM', // 2
+            '8 KM', // 3
         ]
     },
     {
         id : 8,
-        question : "Ali bersama orang tuanya bepergian dari Kota Palu ke Luwuk melalui jalan darat menempuh jarak 15 km. Setelah menempuh 3/5 perjalanan, mereka beristirahat. Berapa km perjalanan yang sudah dilalui Ali bersama orang tuanya?",
+        question : "Hasil dari 2 1/3 x 2 1/4 adalah …",
         options : [
-            '12 KM', // 0
-            '11 KM', // 1
-            '10 KM', // 2
-            '9 KM', // 3
+            '5 1/4', // 0
+            '4 3/12', // 1
+            '3 1/2', // 2
+            '2 2/4', // 3
         ]
     },
     {
         id : 9,
-        question : "Berapa hasil dari persoalan ini 3 1/3 x 2 1/9 = ",
+        question : "Dayu berlari sejauh 2 2/3. Edo berlari sejauh 3 3/2 kali dari jarak yang ditempuh Dayu. Jarak yang ditempuh Edo adalah … km",
         options : [
-            '3/10', // 0
-            '10/3', // 1
-            '9/3', // 2
-            '14/27', // 3
-        ]
-    },
-    {
-        id : 9,
-        question : "Dayu berlari sejauh 5 1/4. Edo berlari sejauh 2 1/2 kali jarak yang ditempuh Dayu. Berapa km jarak yang ditempuh Edo?",
-        options : [
-            '105/8', // 0
-            '186/24', // 1
-            '9 15/24', // 2
-            '6 19/24', // 3
+            '13', // 0
+            '9', // 1
+            '10', // 2
+            '12', // 3
         ]
     },
     {
         id : 10,
-        question : "Maulana membuat jembatan dari stik. Setiap stik mempunyai lebar 1 3/5 inci dan semuanya akan ditempatkan bersebelahan untuk membuat jembatan. berapa panjang jembatan tersebut jika maulana menggunakan 2 2/4 stik untuk panjangnya",
+        question : "Maulana membuat jembatan dari stik. Setiap stik mempunyai lebar 2 2/5 inci dan semuanya akan ditempatkan bersebelahan untuk membuat jembatan. Jika untuk panjangnya maulana menggunakan 3 3/4 stik, maka panjang jembatan tersebut adalah …",
         options : [
-            '2 inci', // 0
-            '3 inci', // 1
-            '4 inci', // 2
-            '5 inci', // 3
+            '6 inci', // 0
+            '7 inci', // 1
+            '8 inci', // 2
+            '9 inci', // 3
         ]
     },
     {
         id : 11,
-        question : "Ada 18 siswa di kelas Ibu Latri dan 1/3 di antaranya adalah senior. Manakah dari ekspresi berikut yang dapat digunakan untuk mencari 1/3 dari 18 ekspresi mana yang setara dengan",
+        question : "Di kelas Ibu Latri terdapat 14 siswa yang 1/3 di antaranya adalah senior. Kalimat matematika yang sesuai dengan pernyataan tersebut adalah …",
         options : [
-            '18 : 1/3', // 0
+            '5 : 1/3', // 0
             '1/3 : 18', // 1
             '3 : 18', // 2
-            '18 : 3', // 3
+            '14 : 3', // 3
         ]
     },
     {
         id : 12,
-        question : "Berapakah nilai dari 4/5 : 5",
+        question : "Nilai dari 2/5 : 3/2 adalah …",
         options : [
-            '4/25', // 0
+            '4/15', // 0
             '4', // 1
-            '25/4', // 2
-            '7/8', // 3
+            '6/10', // 2
+            '5/7', // 3
         ]
     },
     {
         id : 13,
-        question : "Naufal memberikan penggaris kepada 1/4 dari 24 siswa di kelas nya. Manakah dari ekspresi berikut yang dapat digunakan untuk mencari 1/4 dari 24?",
+        question : "Naufal memberikan penggaris kepada 1/6 dari 36 siswa di kelasnya. Kalimat matematika yang tepat untuk menghitung hasil 1/6 dari 36 adalah …",
         options : [
-            '4 : 24', // 0
-            '24 : 4', // 1
-            '1/4 : 24', // 2
-            '24 : 1/4', // 3
+            '37 : 6', // 0
+            '36 : 6', // 1
+            '38 : 6', // 2
+            '39 : 6', // 3
         ]
     },
     {
         id : 14,
-        question : "Selesaikan ekspresi: 3/7 : 1/5",
+        question : "Hasil dari 4/8 : 3/2 adalah …",
         options : [
-            '3/5', // 0
-            '3/35', // 1
-            '5/21', // 2
-            '15/7', // 3
+            '4/3', // 0
+            '12/16', // 1
+            '7/10', // 2
+            '1/3', // 3
         ]
     },
     {
         id : 15,
-        question : "Hasil dari persoalan ini adalah 2 1/5 : 1/6",
+        question : "Hasil dari pembagian 2 2/4 : 1 3/5 adalah",
         options : [
-            '11/30', // 0
-            '3/35', // 1
+            '11/16', // 0
+            '3/16', // 1
             '33/8', // 2
-            '66/5', // 3
+            '25/16', // 3
         ]
     },
     {
         id : 16,
-        question : "Berapa jumlah pembagian dari 3 2/4 : 2/4",
+        question : "Hasil pembagian 1 5/5 : 2/4 adalah …",
         options : [
-            '5', // 0
-            '6', // 1
-            '7', // 2
-            '8', // 3
+            '2', // 0
+            '3', // 1
+            '4', // 2
+            '5', // 3
         ]
     },
     {
         id : 17,
-        question : "Berapa jumlah dari 3 2/5 : 1 7/10",
+        question : "Pecahan yang menunjukkan hasil dari 4 2/3 : 1 5/2 adalah …",
         options : [
-            '34/7', // 0
-            '30/6', // 1
-            '42/8', // 2
-            '50/2', // 3
+            '1 1/3', // 0
+            '2 1/6', // 1
+            '4 5/4', // 2
+            '6 2/3', // 3
         ]
     },
     {
         id : 18,
-        question : "Hasil dari 1 1/2 : 2 3/4 adalah ",
+        question : "Hasil dari 4 2/3 : 2 2/4 adalah …",
         options : [
-            '6/11', // 0
-            '12/11', // 1
-            '7/11', // 2
-            '5/10', // 3
+            '1 13/15', // 0
+            '1 20/14', // 1
+            '2 5/6', // 2
+            '5 2/3', // 3
         ]
     },
     {
         id : 19,
-        question : "Rizky memiliki coklat sebanyak 4 12/6 buah. Dia ingin membagikannya kepada 1 4/2 siswa. Berapa buah yang didapatkan oleh setiap siswa",
+        question : "Rizky memiliki coklat sebanyak 6 2/3 buah. Dia ingin membagikannya kepada 1 3/2 siswa. Coklat yang didapatkan oleh setiap siswa sebanyak …",
         options : [
-            '5 buah', // 0
-            '4 buah', // 1
-            '3 buah', // 2
-            '2 buah', // 3
+            '5 2/3 buah', // 0
+            '4 5/6 buah', // 1
+            '3 4/3 buah', // 2
+            '2 2/3 buah', // 3
         ]
     },
     {
         id : 20,
-        question : "Hitunglah pembagian dari 8 2/6 : 6 2/6",
+        question : "Pecahan yang merupakan hasil pembagian dari 6 2/6  : 4 2/6 adalah …",
         options : [
-            '120/228', // 0
-            '288/228', // 1
-            '228/120', // 2
-            '100/120', // 3
+            '1 5/16', // 0
+            '1 6/13', // 1
+            '2 7/18', // 2
+            '6 6/13', // 3
         ]
     },
 ]
 
-export const answers = [0, 1, 2, 0, 3, 2, 3, 1, 0, 2, 3, 0, 1, 3, 3, 2, 0, 0, 3, 1];
+export const answers = [0, 1, 2, 3, 3, 2, 3, 0, 3, 3, 3, 0, 1, 3, 3, 2, 0, 0, 0, 1];
