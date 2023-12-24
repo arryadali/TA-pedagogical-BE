@@ -13,7 +13,7 @@ export default [
     },
     {
         id : 2,
-        question : "bilangan dibawah ini yang setara dengan 2/3 adalah ....",
+        question : "Bilangan dibawah ini yang setara dengan 2/3 adalah ....",
         options : [
             '1/2', // 0
             '4/6', // 1
@@ -35,33 +35,36 @@ export default [
     },
     {
         id : 4,
-        question : "Jika 3/4 bagian dari sebuah kue dikalikan dengan 4/2, maka hasilnya adalah ...",
+        question : "Jika 1 3/4 bagian dari sebuah kue dikalikan dengan 4/2, maka hasilnya adalah ...",
         options : [
-            '3/2', // 0
+            '7/2', // 0
             '12/4', // 1
             '2/3', // 2
             '3/8', // 3
-        ]
+        ],
+        category: 'perkalianSedang'
     },
     {
         id : 5,
-        question : "Hasil perkalian dari 1/2 x 4/9 adalah …",
+        question : "Hasil perkalian dari 3 1/2 x 4/9 adalah …",
         options : [
-            '3/2', // 0
-            '4/9', // 1
-            '4/19', // 2
-            '2/9', // 3
-        ]
+            '4 2/1', // 0
+            '3 5/6', // 1
+            '2 3/4', // 2
+            '1 5/9', // 3
+        ],
+        category: 'perkalianSedang'
     },
     {
         id : 6,
-        question : "Ali dan Budi memiliki sejumlah permen. Ali memberikan 2/3 permen yang dimilikinya kepada Budi. Selanjutnya, Budi mengalikan permen yang diterimanya dengan 5/6. Berapa banyaknya permen yang dimiliki Budi …",
+        question : "Ali dan Budi memiliki sejumlah permen. Ali memberikan 4 2/3 permen yang dimilikinya kepada Budi. Selanjutnya, Budi mengalikan permen yang diterimanya dengan 5/6. Berapa banyaknya permen yang dimiliki Budi …",
         options : [
             '7/9', // 0
             '10/6', // 1
-            '5/9', // 2
+            '35/9', // 2
             '10/3', // 3
-        ]
+        ],
+        category: 'perkalianSedang'
     },
     {
         id : 7,
@@ -71,7 +74,8 @@ export default [
             '11 KM', // 1
             '10 KM', // 2
             '9 KM', // 3
-        ]
+        ],
+        category: 'perkalianMudah'
     },
     {
         id : 8,
@@ -81,7 +85,8 @@ export default [
             '10/3', // 1
             '9/3', // 2
             '14/27', // 3
-        ]
+        ],
+        category: 'perkalianSulit'
     },
     {
         id : 9,
@@ -91,7 +96,8 @@ export default [
             '186/24', // 1
             '9 15/24', // 2
             '6 19/24', // 3
-        ]
+        ],
+        category: 'perkalianSulit'
     },
     {
         id : 10,
@@ -101,7 +107,8 @@ export default [
             '3 inci', // 1
             '4 inci', // 2
             '5 inci', // 3
-        ]
+        ],
+        category: 'perkalianSulit'
     },
     {
         id : 11,
@@ -111,7 +118,8 @@ export default [
             '1/3 : 18', // 1
             '3 : 18', // 2
             '18 : 3', // 3
-        ]
+        ],
+        category: 'pembagianMudah'
     },
     {
         id : 12,
@@ -121,7 +129,8 @@ export default [
             '4', // 1
             '25/4', // 2
             '7/8', // 3
-        ]
+        ],
+        category: 'pembagianMudah'
     },
     {
         id : 13,
@@ -131,17 +140,19 @@ export default [
             '24 : 4', // 1
             '25 : 4', // 2
             '26 : 4', // 3
-        ]
+        ],
+        category: 'pembagianMudah'
     },
     {
         id : 14,
-        question : "Hasil dari 3/7 : 1/5 adalah …",
+        question : "Hasil dari 3 3/7 : 6/5 adalah …",
         options : [
             '3/5', // 0
             '3/35', // 1
             '5/21', // 2
-            '15/7', // 3
-        ]
+            '20/7', // 3
+        ],
+        category: 'pembagianSedang'
     },
     {
         id : 15,
@@ -151,7 +162,8 @@ export default [
             '3/35', // 1
             '33/8', // 2
             '66/5', // 3
-        ]
+        ],
+        category: 'pembagianSedang'
     },
     {
         id : 16,
@@ -161,7 +173,8 @@ export default [
             '6', // 1
             '7', // 2
             '8', // 3
-        ]
+        ],
+        category: 'pembagianSedang'
     },
     {
         id : 17,
@@ -171,7 +184,8 @@ export default [
             '4/2', // 1
             '6/1', // 2
             '8/5', // 3
-        ]
+        ],
+        category: 'pembagianSulit'
     },
     {
         id : 18,
@@ -181,7 +195,8 @@ export default [
             '12/11', // 1
             '7/11', // 2
             '5/10', // 3
-        ]
+        ],
+        category: 'pembagianSulit'
     },
     {
         id : 19,
@@ -191,7 +206,8 @@ export default [
             '4 buah', // 1
             '3 buah', // 2
             '2 buah', // 3
-        ]
+        ],
+        category: 'pembagianSulit'
     },
     {
         id : 20,
@@ -201,7 +217,8 @@ export default [
             '300/228', // 1
             '228/120', // 2
             '100/120', // 3
-        ]
+        ],
+        category: 'pembagianSulit'
     },
 ]
 
