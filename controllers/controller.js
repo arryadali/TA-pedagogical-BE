@@ -124,7 +124,7 @@ export async function storeResultPretest(req, res) {
     try {
         const { usernamePretest, resultPretest, attemptsPretest, pointsPretest, achievedPretest } = req.body;
 
-        if (!usernameusernamePretest && !resultPretest) throw new Error("Data Not Provided...!");
+        if (!usernamePretest && !resultPretest) throw new Error("Data Not Provided...!");
 
         const resultDocument = new ResultsPretest({ usernamePretest, resultPretest, attemptsPretest, pointsPretest, achievedPretest });
         await resultDocument.save();
@@ -198,7 +198,7 @@ export async function signIn(req, res) {
                 jeniskelas : result.jeniskelas,
                 code : 200,
                 message : "User found...!",
-                token : "awdwd"
+                token : result._id
             })
         }
     }).catch(err => {

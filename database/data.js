@@ -59,7 +59,7 @@ export default [
         id : 6,
         question : "Ali dan Budi memiliki sejumlah permen. Ali memberikan 2 4/5 permen yang dimilikinya kepada Budi. Selanjutnya, Budi mengalikan permen yang diterimanya dengan 3/6. Berapa banyaknya permen yang dimiliki Budi …",
         options : [
-            '7/6', // 0
+            '7/5', // 0
             '12/6', // 1
             '21/15', // 2
             '7/11', // 3
@@ -92,9 +92,9 @@ export default [
         id : 9,
         question : "Dayu berlari sejauh 2 2/3. Edo berlari sejauh 3 3/2 kali dari jarak yang ditempuh Dayu. Jarak yang ditempuh Edo adalah … km",
         options : [
-            '13', // 0
-            '9', // 1
-            '10', // 2
+            '9', // 0
+            '10', // 1
+            '11', // 2
             '12', // 3
         ],
         category: 'perkalianSulit'
