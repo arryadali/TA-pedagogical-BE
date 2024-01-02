@@ -8,7 +8,9 @@ const resultPretestModel = new Schema({
     attemptsPretest : {type : Number, default : 0},
     pointsPretest : {type : Number, default : 0},
     achivedPretest : {type : String, default : ''},
-    createdAt : {type : Date, default : Date.now}
+    refleksiBenarPretest : {type : String, default : ''},
+    refleksiSalahPretest : {type : String, default : ''},
+    createdAt : {type : Date, default : Date.now},
 })
 
 export default mongoose.model('resultpretest', resultPretestModel)

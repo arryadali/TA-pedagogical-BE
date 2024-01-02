@@ -5,7 +5,7 @@ import Questionsposttest from "../models/questionSchema.js"
 import Questionspretest from "../models/questionPretestSchema.js"
 
 import Results from "../models/resultSchema.js"
-import ResultsPretest from "../models/resultPretestSchema.js"
+import ResultPretests from "../models/resultPretestSchema.js"
 
 import userModel from "../models/userSchema.js"
 
@@ -86,11 +86,11 @@ export async function getResult(req, res) {
 // post all result
 export async function storeResult(req, res) {
     try {
-        const { username, result, attempts, points, achieved } = req.body;
+        const { username, result, attempts, points, achieved, refleksiSalah, refleksiBenar } = req.body;
 
         if (!username && !result) throw new Error("Data Not Provided...!");
 
-        const resultDocument = new Results({ username, result, attempts, points, achieved });
+        const resultDocument = new Results({ username, result, attempts, points, achieved, refleksiSalah, refleksiBenar });
         await resultDocument.save();
 
         res.json({ msg: "Result Saved Successfully...!" });
@@ -112,7 +112,7 @@ export async function dropResult(req, res) {
 // get all result
 export async function getResultPretest(req, res) {
     try {
-        const r = await ResultsPretest.find();
+        const r = await ResultPretests.find();
         res.json(r)
     } catch (error) {
         res.json({error})
@@ -122,11 +122,11 @@ export async function getResultPretest(req, res) {
 // post all result
 export async function storeResultPretest(req, res) {
     try {
-        const { usernamePretest, resultPretest, attemptsPretest, pointsPretest, achievedPretest } = req.body;
+        const { usernamePretest, resultPretest, attemptsPretest, pointsPretest, achievedPretest, refleksiSalahPretest, refleksiBenarPretest } = req.body;
 
         if (!usernamePretest && !resultPretest) throw new Error("Data Not Provided...!");
 
-        const resultDocument = new ResultsPretest({ usernamePretest, resultPretest, attemptsPretest, pointsPretest, achievedPretest });
+        const resultDocument = new ResultPretests({ usernamePretest, resultPretest, attemptsPretest, pointsPretest, achievedPretest, refleksiSalahPretest, refleksiBenarPretest });
         await resultDocument.save();
 
         res.json({ msg: "Result Saved Successfully...!" });
@@ -138,7 +138,7 @@ export async function storeResultPretest(req, res) {
 // delete all result
 export async function dropResultPretest(req, res) {
     try {
-        await ResultsPretest.deleteMany();
+        await ResultPretests.deleteMany();
         res.json({ msg: "Result Deleted Successfully...!" })
     } catch (error) {
         res.json({error})
@@ -198,7 +198,7 @@ export async function signIn(req, res) {
                 jeniskelas : result.jeniskelas,
                 code : 200,
                 message : "User found...!",
-                token : result._id
+                token : "awdwd"
             })
         }
     }).catch(err => {
