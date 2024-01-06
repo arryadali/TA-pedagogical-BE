@@ -2,7 +2,7 @@
 export default [
     {
         id : 1,
-        question : "Hasil perkalian dari 3 x 2/4 adalah ... ",
+        question : "1. Hasil perkalian dari 3 x 2/4 adalah ... ",
         options : [
             '6/4', // 0
             '2/3', // 1
@@ -13,7 +13,7 @@ export default [
     },
     {
         id : 2,
-        question : "bilangan dibawah ini yang setara dengan 2/3 adalah ....",
+        question : "2. bilangan dibawah ini yang setara dengan 2/3 adalah ....",
         options : [
             '1/2', // 0
             '4/6', // 1
@@ -24,7 +24,7 @@ export default [
     },
     {
         id : 3,
-        question : "Dari pilihan berikut ini, pecahan yang merupakan hasil dari perkalian 4 x 2/3 adalah …",
+        question : "3. Dari pilihan berikut ini, pecahan yang merupakan hasil dari perkalian 4 x 2/3 adalah …",
         options : [
             '4/6', // 0
             '6/3', // 1
@@ -35,7 +35,7 @@ export default [
     },
     {
         id : 4,
-        question : "Jika 1 2/4 bagian dari sebuah kue dikalikan dengan 5/3, maka hasilnya adalah ...",
+        question : "4. Jika 1 2/4 bagian dari sebuah kue dikalikan dengan 5/3, maka hasilnya adalah ...",
         options : [
             '3/2', // 0
             '12/4', // 1
@@ -46,7 +46,7 @@ export default [
     },
     {
         id : 5,
-        question : "Hasil perkalian dari 2 3/2 x 2/9 adalah …",
+        question : "5. Hasil perkalian dari 2 3/2 x 2/9 adalah …",
         options : [
             '3/2', // 0
             '4/18', // 1
@@ -57,7 +57,7 @@ export default [
     },
     {
         id : 6,
-        question : "Ali dan Budi memiliki sejumlah permen. Ali memberikan 2 4/5 permen yang dimilikinya kepada Budi. Selanjutnya, Budi mengalikan permen yang diterimanya dengan 3/6. Berapa banyaknya permen yang dimiliki Budi …",
+        question : "6. Ali dan Budi memiliki sejumlah permen. Ali memberikan 2 4/5 permen yang dimilikinya kepada Budi. Selanjutnya, Budi mengalikan permen yang diterimanya dengan 3/6. Berapa banyaknya permen yang dimiliki Budi …",
         options : [
             '7/5', // 0
             '12/6', // 1
@@ -68,7 +68,7 @@ export default [
     },
     {
         id : 7,
-        question : "Ali bersama orang tuanya bepergian dari Kota Palu ke Luwuk melalui jalan darat menempuh jarak 12 km. Setelah menempuh 4/6 perjalanan, mereka beristirahat. Perjalanan yang sudah ditempuh Ali bersama orang tuanya sejauh …",
+        question : "7. Ali bersama orang tuanya bepergian dari Kota Palu ke Luwuk melalui jalan darat menempuh jarak 12 km. Setelah menempuh 4/6 perjalanan, mereka beristirahat. Perjalanan yang sudah ditempuh Ali bersama orang tuanya sejauh …",
         options : [
             '11 KM', // 0
             '10 KM', // 1
@@ -79,7 +79,7 @@ export default [
     },
     {
         id : 8,
-        question : "Hasil dari 2 1/3 x 2 1/4 adalah …",
+        question : "8. Hasil dari 2 1/3 x 2 1/4 adalah …",
         options : [
             '5 1/4', // 0
             '4 3/12', // 1
@@ -90,7 +90,7 @@ export default [
     },
     {
         id : 9,
-        question : "Dayu berlari sejauh 2 2/3. Edo berlari sejauh 3 3/2 kali dari jarak yang ditempuh Dayu. Jarak yang ditempuh Edo adalah … km",
+        question : "9. Dayu berlari sejauh 2 2/3. Edo berlari sejauh 3 3/2 kali dari jarak yang ditempuh Dayu. Jarak yang ditempuh Edo adalah … km",
         options : [
             '9', // 0
             '10', // 1
@@ -101,7 +101,7 @@ export default [
     },
     {
         id : 10,
-        question : "Maulana membuat jembatan dari stik. Setiap stik mempunyai lebar 2 2/5 inci dan semuanya akan ditempatkan bersebelahan untuk membuat jembatan. Jika untuk panjangnya maulana menggunakan 3 3/4 stik, maka panjang jembatan tersebut adalah …",
+        question : "10. Maulana membuat jembatan dari stik. Setiap stik mempunyai lebar 2 2/5 inci dan semuanya akan ditempatkan bersebelahan untuk membuat jembatan. Jika untuk panjangnya maulana menggunakan 3 3/4 stik, maka panjang jembatan tersebut adalah …",
         options : [
             '6 inci', // 0
             '7 inci', // 1
@@ -112,7 +112,7 @@ export default [
     },
     {
         id : 11,
-        question : "Di kelas Ibu Latri terdapat 14 siswa yang 1/3 di antaranya adalah senior. Kalimat matematika yang sesuai dengan pernyataan tersebut adalah …",
+        question : "11. Di kelas Ibu Latri terdapat 14 siswa yang 1/3 di antaranya adalah senior. Kalimat matematika yang sesuai dengan pernyataan tersebut adalah …",
         options : [
             '5 : 1/3', // 0
             '1/3 : 18', // 1
@@ -123,7 +123,7 @@ export default [
     },
     {
         id : 12,
-        question : "Nilai dari 2/5 : 3/2 adalah …",
+        question : "12. Nilai dari 2/5 : 3/2 adalah …",
         options : [
             '4/15', // 0
             '4', // 1
@@ -134,7 +134,7 @@ export default [
     },
     {
         id : 13,
-        question : "Naufal memberikan penggaris kepada 1/6 dari 36 siswa di kelasnya. Kalimat matematika yang tepat untuk menghitung hasil 1/6 dari 36 adalah …",
+        question : "13. Naufal memberikan penggaris kepada 1/6 dari 36 siswa di kelasnya. Kalimat matematika yang tepat untuk menghitung hasil 1/6 dari 36 adalah …",
         options : [
             '37 : 6', // 0
             '36 : 6', // 1
@@ -145,7 +145,7 @@ export default [
     },
     {
         id : 14,
-        question : "Hasil dari 4/8 : 3/2 adalah …",
+        question : "14. Hasil dari 4/8 : 3/2 adalah …",
         options : [
             '4/3', // 0
             '12/16', // 1
@@ -156,7 +156,7 @@ export default [
     },
     {
         id : 15,
-        question : "Hasil dari pembagian 2 2/4 : 3/5 adalah",
+        question : "15. Hasil dari pembagian 2 2/4 : 3/5 adalah",
         options : [
             '4 1/6', // 0
             '3 1/16', // 1
@@ -167,7 +167,7 @@ export default [
     },
     {
         id : 16,
-        question : "Hasil pembagian 1 5/5 : 2/4 adalah …",
+        question : "16. Hasil pembagian 1 5/5 : 2/4 adalah …",
         options : [
             '2', // 0
             '3', // 1
@@ -178,7 +178,7 @@ export default [
     },
     {
         id : 17,
-        question : "Pecahan yang menunjukkan hasil dari 4 2/3 : 5/2 adalah …",
+        question : "17. Pecahan yang menunjukkan hasil dari 4 2/3 : 5/2 adalah …",
         options : [
             '28/15', // 0
             '16/8', // 1
@@ -189,7 +189,7 @@ export default [
     },
     {
         id : 18,
-        question : "Hasil dari 4 2/3 : 2 2/4 adalah …",
+        question : "18. Hasil dari 4 2/3 : 2 2/4 adalah …",
         options : [
             '1 13/15', // 0
             '1 20/14', // 1
@@ -200,7 +200,7 @@ export default [
     },
     {
         id : 19,
-        question : "Rizky memiliki coklat sebanyak 6 2/3 buah. Dia ingin membagikannya kepada 1 3/2 siswa. Coklat yang didapatkan oleh setiap siswa sebanyak …",
+        question : "19. Rizky memiliki coklat sebanyak 6 2/3 buah. Dia ingin membagikannya kepada 1 3/2 siswa. Coklat yang didapatkan oleh setiap siswa sebanyak …",
         options : [
             '5 2/3 buah', // 0
             '4 5/6 buah', // 1
@@ -211,7 +211,7 @@ export default [
     },
     {
         id : 20,
-        question : "Pecahan yang merupakan hasil pembagian dari 6 2/6  : 4 2/6 adalah …",
+        question : "20. Pecahan yang merupakan hasil pembagian dari 6 2/6  : 4 2/6 adalah …",
         options : [
             '1 5/16', // 0
             '1 6/13', // 1
