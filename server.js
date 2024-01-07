@@ -11,8 +11,8 @@ const app = express()
 
 // app middlewares
 app.use(cors({
-    origin: 'https://mathped.vercel.app', // Sesuaikan dengan domain klien Anda
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    origin: '*', // Sesuaikan dengan domain klien Anda
+    methods: '*',
     credentials: true, // Izinkan pengiriman kredensial (contoh: cookies)
   }));
 app.use(morgan('tiny')); 
