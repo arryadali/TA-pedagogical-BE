@@ -214,9 +214,9 @@ export default [
         question : "20. Pecahan yang merupakan hasil pembagian dari 8 2/6  : 6 2/6 adalah …",
         options : [
             '120/228', // 0
-            '300/228', // 1
-            '228/120', // 2
-            '100/120', // 3
+            '50/38', // 1
+            '20/15', // 2
+            '30/60', // 3
         ],
         category: 'pembagianSulit'
     },
