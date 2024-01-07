@@ -42,3 +42,5 @@ connect().then(() => {
 }).catch(error => {
     console.log("Invalid Database Connection")
 })
+
+module.exports = app;
