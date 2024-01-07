@@ -10,12 +10,8 @@ import connect from "./database/conn.js";
 const app = express()
 
 // app middlewares
-app.use(cors({
-    origin: 'https://mathped.vercel.app', // Sesuaikan dengan domain klien Anda
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true, // Izinkan pengiriman kredensial (contoh: cookies)
-  }));
-app.use(morgan('tiny')); 
+app.use(morgan('tiny'));
+app.use(cors());
 app.use(express.json());
 config();
 
