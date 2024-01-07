@@ -4,10 +4,6 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "start": "node server.js",
-    "vercel-build": "echo hello"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
