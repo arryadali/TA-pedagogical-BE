@@ -17,7 +17,7 @@ app.use(express.json());
 config();
 
 // application port
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 80;
 
 // routes
 app.use('/api', router)
