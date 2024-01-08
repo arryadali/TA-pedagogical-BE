@@ -12,6 +12,7 @@ const app = express()
 // app middlewares
 app.use(morgan('tiny'));
 app.use(cors());
+app.options("*", cors());
 app.use(express.json());
 config();
 
@@ -42,4 +43,4 @@ connect().then(() => {
     console.log("Invalid Database Connection", error)
 })
 
-module.exports = app
+module.exports = app;
