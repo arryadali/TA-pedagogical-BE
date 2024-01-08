@@ -114,9 +114,9 @@ export default [
         id : 11,
         question : "11. Di kelas Ibu Latri terdapat 18 siswa yang 1/3 di antaranya adalah senior. Kalimat matematika yang sesuai dengan pernyataan tersebut adalah …",
         options : [
-            '18 : 1/3', // 0
-            '1/3 : 18', // 1
-            '3 : 18', // 2
+            '18 : 6/3', // 0
+            '1 : 19', // 1
+            '3 : 14', // 2
             '18 : 3', // 3
         ],
         category: 'pembagianMudah'
@@ -181,7 +181,7 @@ export default [
         question : "17. Pecahan yang menunjukkan hasil dari 3 2/5 : 1 7/10 adalah …",
         options : [
             '2/1', // 0
-            '4/2', // 1
+            '4/3', // 1
             '6/1', // 2
             '8/5', // 3
         ],
